@@ -1,0 +1,330 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("PTSans-Regular"), url("fonts/PTSans-Regular.ttf") format('ttf');
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: bold;
+    font-weight: 700;
+    src: local("PTSans-Bold"), url("fonts/PTSans-Bold.ttf") format('ttf');
+  }
+  
+  @font-face {
+    font-family: "Fira Sans";
+    font-style: bold;
+    font-weight: 700;
+    src: local("FiraSans-Bold"), url("fonts/FiraSans-Bold.ttf") format('ttf');
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans";
+    font-weight: 400;
+  }
+   body {
+       
+       max-width: 1398px;
+   }
+  
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    margin: -1px;
+  }
+  .header {
+
+}
+.header__topline {
+    background: #F3F7F9;
+    padding: 0 115px 0 115px;
+    
+}
+.topline {
+    display: flex;
+    justify-content: space-between;
+    min-height: 45px;
+    align-items: center;
+}
+.topline__text {
+display: inline;
+font-style: italic;
+font-size: 14px;
+color: #EE3643;
+}
+.topline__address {
+    display: inline;
+    font-size: 14px;
+    color: #32425C;
+}
+.topline__phone {
+    display: inline-block;
+    margin: 0 0 0 56px;
+    font-weight: 700;
+font-size: 16px;
+letter-spacing: 2px;
+text-transform: uppercase;
+color: #293449;
+position: relative;
+}
+
+.topline__phone::before {
+    position: absolute;
+    margin:0 0 0 -18px;
+    content:"";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("img/icon-phone.svg") no-repeat;
+}
+.header__middleline {
+    display: flex;
+    height: 45px;
+    background: #293449;
+    color: #FFFFFF;
+    
+}
+.header__logo {
+    position: relative;
+    margin: 0 0 0 112px;
+    width: 220px;
+    height: 50px;
+    background: url("img/logo-bg.jpg");
+    display: flex;
+    justify-content: center;
+    
+}
+.header__logo:before {
+    position: absolute;
+    content: '';
+    width: 107px;
+    height: 17px;
+    background: url("img/logo-technomart.png");
+    z-index: 1;
+    margin: 13px 0 20px 0;
+    
+}
+
+.user__settings {
+    display: flex;
+    justify-content: space-between;
+}
+.header__search {
+    position: relative;
+    /* margin: 0 0 0 53px; */
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+
+.search__svg {
+    position: absolute;
+    left: 21px;
+    fill: #DADADA;
+}
+.input__search {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    width: 717px;
+    height: 45px;
+    padding: 0 17px 0 53px;
+    border: none;
+    font-family: 'PT Sans';
+    font-size: 16px;
+}
+
+.input__search:active, .input__search:focus {
+    background: #F1F5F7;
+    border: none;
+    border-radius: 0;
+}
+
+.search__close{
+    position: absolute;
+    background: url('img/icon-close.svg');
+    margin: 0 17px 0 0;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.input__search:active .search__close {
+    display: block;
+}
+
+.input__search:focus .search__close {
+    display: block;
+}
+
+/* ////////////исчезает */
+.input__search:active .search__svg {
+    fill: #405069;
+}
+
+.input__search:focus .search__svg {
+    fill: #405069; 
+}
+
+
+.login {
+    position: relative;
+    font-family: 'PT Sans';
+
+font-weight: 700;
+color: #F1F5F7;
+text-decoration: none;
+text-transform: uppercase;
+letter-spacing: 2px;
+display: block;
+margin-top: 14px;
+margin-left: 170px;
+
+
+}
+
+.login:before {
+    position: absolute;
+   content: '';
+   width: 20px;
+   height: 20px;
+   background: url("img/icon-enter.svg");
+    left: -30px;
+
+}
+.header__bottomline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    background: #3D546F;
+
+}
+.header__nav {
+}
+.nav {
+}
+.nav__list {
+    display: flex;
+
+    list-style: none;
+    margin: 0 0 0 115px;
+    
+}
+.nav__item:not(:last-child) {
+    margin: 0 24px 0 0;
+   
+}
+.nav__link {
+     
+font-family: 'PT Sans';
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+text-decoration: none;
+}
+
+.user__list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0 115px 0 0;
+}
+.user__item:not(:last-child) {
+margin-right: 26px;
+
+}
+.user__link svg{
+    opacity: 0.6;
+}
+.user__ribbon svg{
+  
+   
+}
+.user__basket {
+}
+.user__order {
+    width: 170px;
+    height: 42px;
+    background: #63A63E;
+    border-radius: 4px;
+    font-family: 'PT Sans';
+text-decoration: none;
+font-weight: 700;
+font-size: 14px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+letter-spacing: 2px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+
+.main__container {
+}
+.promo {
+}
+.visually-hidden {
+}
+.promo__cards {
+    display: grid;
+}
+.promo__card {
+}
+.promo__card--materials {
+}
+.promo__card__title {
+}
+.promo__card__link {
+}
+.promo__card--instrument {
+}
+.promo__card--technik {
+}
+.promo__slider_wrapper {
+}
+.arrows {
+}
+.arrow_left {
+}
+.arrow_right {
+}
+.circles {
+}
+.slider {
+}
+.slides {
+}
+.slide1 {
+}
+.slide_text {
+}
+.slide-title {
+}
+.btn {
+}
+.btn_slider {
+}
+.slide2 {
+}
+.promo__card--discount {
+}
+.promo__card--delivery {
+}
