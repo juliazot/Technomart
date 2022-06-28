@@ -28,7 +28,7 @@
 }
 
 body {
-
+    margin: 0 auto;
     max-width: 1398px;
 }
 
@@ -889,7 +889,7 @@ body {
     
     height: 180px;
     width: 216px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;;
 
 
 }
